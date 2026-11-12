@@ -1,0 +1,723 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <meta name="theme-color" content="#f7f5f0" />
+    <meta
+      name="description"
+      content="Performance essentials for every kind of movement. Find your next favorite at RedStore."
+    />
+    <title>RedStore — Move your way</title>
+  </head>
+  <body>
+    <div class="announcement-bar">
+      <p>
+        Complimentary shipping on orders over $75 <span>—</span> Find your
+        stride.
+      </p>
+    </div>
+    <header>
+      <div class="container">
+        <div class="nav-bar">
+          <a href="#" class="brand" aria-label="RedStore home">
+            <span class="brand-mark" aria-hidden="true">r.</span>
+            <span class="brand-copy"
+              ><strong>redstore</strong><small>MOVE WITH INTENTION</small></span
+            >
+          </a>
+
+          <nav id="site-navigation" aria-label="Main navigation">
+            <a href="#">Home</a>
+            <a href="#products">Shop</a>
+            <a href="#about">Our story</a>
+            <a href="#footer">Contact</a>
+          </nav>
+
+          <div class="nav-actions">
+            <a
+              href="#products"
+              class="cart-link"
+              aria-label="Shopping bag, 0 items"
+            >
+              <img src="images/images/cart.png" class="cart" alt="" />
+              <span id="cart-count" aria-live="polite">0</span>
+            </a>
+            <button
+              class="menu-toggle"
+              type="button"
+              aria-label="Open menu"
+              aria-expanded="false"
+              aria-controls="site-navigation"
+            >
+              <img src="images/images/menu.png" class="menu" alt="" />
+            </button>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="text-box">
+            <p class="eyebrow">Made for the way you move</p>
+            <h1>
+              Find your <span>strong.</span><br />
+              Feel your best.
+            </h1>
+
+            <p>
+              Thoughtful essentials for your everyday movement. Show up, find
+              your rhythm, and make every day count.
+            </p>
+
+            <a href="#products" class="button"
+              >Explore the collection <span aria-hidden="true">↗</span></a
+            >
+            <div class="hero-note">
+              <span class="hero-note-stars" aria-label="Rated 4.9 out of 5"
+                >★★★★★</span
+              >
+              <span>Loved by 12,000+ movers</span>
+            </div>
+          </div>
+
+          <div class="hero-image">
+            <div class="hero-image-ring"></div>
+            <img
+              src="images/images/image1.png"
+              alt="Athlete ready to take on their next workout"
+            />
+            <div class="hero-sticker">
+              <span>MOVE</span><strong>YOUR<br />WAY</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--  Categories section  -->
+    <section class="category-section" aria-label="Shop by category">
+      <div class="images-3">
+        <div class="category-image">
+          <img
+            src="images/images/category-1.jpg"
+            alt="Shop women's activewear"
+          />
+          <span>Women <span aria-hidden="true">↗</span></span>
+        </div>
+
+        <div class="category-image">
+          <img src="images/images/category-2.jpg" alt="Shop men's activewear" />
+          <span>Men <span aria-hidden="true">↗</span></span>
+        </div>
+
+        <div class="category-image">
+          <img
+            src="images/images/category-3.jpg"
+            alt="Shop accessories and training gear"
+          />
+          <span>Accessories <span aria-hidden="true">↗</span></span>
+        </div>
+      </div>
+    </section>
+
+    <div
+      class="editorial-ticker"
+      aria-label="Performance for every kind of movement"
+    >
+      <div class="ticker-track" aria-hidden="true">
+        <span>Move with intention</span><i>✳</i><span>Made to keep up</span
+        ><i>✳</i><span>Find your everyday</span><i>✳</i>
+        <span>Move with intention</span><i>✳</i><span>Made to keep up</span
+        ><i>✳</i><span>Find your everyday</span><i>✳</i>
+      </div>
+    </div>
+
+    <!--- Product Features  -->
+    <section id="products" class="products-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">The good stuff</p>
+          <h2 class="h2">Bestsellers</h2>
+        </div>
+        <a href="#latest-products" class="text-link"
+          >View all products <span aria-hidden="true">↗</span></a
+        >
+      </div>
+      <div class="collection-toolbar" aria-label="Filter products">
+        <span>Explore the collection</span>
+        <div
+          class="collection-filters"
+          role="group"
+          aria-label="Filter products by type"
+        >
+          <button
+            class="filter-chip is-active"
+            type="button"
+            data-filter="all"
+            aria-pressed="true"
+          >
+            Everything <span>12</span>
+          </button>
+          <button
+            class="filter-chip"
+            type="button"
+            data-filter="apparel"
+            aria-pressed="false"
+          >
+            Apparel
+          </button>
+          <button
+            class="filter-chip"
+            type="button"
+            data-filter="footwear"
+            aria-pressed="false"
+          >
+            Footwear
+          </button>
+          <button
+            class="filter-chip"
+            type="button"
+            data-filter="accessories"
+            aria-pressed="false"
+          >
+            Accessories
+          </button>
+        </div>
+      </div>
+      <div class="images-4">
+        <div class="product" data-category="apparel" data-tag="Bestseller">
+          <img
+            src="images/images/product-1.jpg"
+            alt="Red printed performance T-shirt"
+          />
+          <p>Red Printed T-shirt</p>
+
+          <div class="rating">
+            <ion-icon name="star-outline" class="star"></ion-icon>
+            <ion-icon name="star-outline" class="star"></ion-icon>
+            <ion-icon name="star-outline" class="star"></ion-icon>
+            <ion-icon name="star-outline" class="star"></ion-icon>
+          </div>
+
+          <div class="price">
+            <p>$50.00</p>
+            <a href="#" class="shop">Add to cart</a>
+          </div>
+        </div>
+
+        <div class="product" data-category="footwear" data-tag="Popular">
+          <img
+            src="images/images/product-2.jpg"
+            alt="Black Skechers training shoes"
+          />
+          <p>Black Skechers</p>
+
+          <div class="rating">
+            <ion-icon name="star-outline" class="star"></ion-icon>
+
+            <ion-icon name="star-outline" class="star"></ion-icon>
+
+            <ion-icon name="star-outline" class="star"></ion-icon>
+
+            <ion-icon name="star-outline" class="star"></ion-icon>
+          </div>
+
+          <div class="price">
+            <p>$50.00</p>
+            <a href="#" class="shop">Add to cart</a>
+          </div>
+        </div>
+
+        <div class="product" data-category="apparel">
+          <img src="images/images/product-3.jpg" alt="Grey training pants" />
+          <p>Grey Pants</p>
+
+          <div class="rating">
+            <ion-icon name="star-outline" class="star"></ion-icon>
+
+            <ion-icon name="star-outline" class="star"></ion-icon>
+
+            <ion-icon name="star-outline" class="star"></ion-icon>
+
+            <ion-icon name="star-outline" class="star"></ion-icon>
+          </div>
+
+          <div class="price">
+            <p>$50.00</p>
+            <a href="#" class="shop">Add to cart</a>
+          </div>
+        </div>
+
+        <div class="product" data-category="apparel">
+          <img
+            src="images/images/product-4.jpg"
+            alt="Blue printed performance T-shirt"
+          />
+          <p>Blue Printed T-shirt</p>
+
+          <div class="rating">
+            <ion-icon name="star-outline" class="star"></ion-icon>
+
+            <ion-icon name="star-outline" class="star"></ion-icon>
+
+            <ion-icon name="star-outline" class="star"></ion-icon>
+
+            <ion-icon name="star-outline" class="star"></ion-icon>
+          </div>
+
+          <div class="price">
+            <p>$50.00</p>
+            <a href="#" class="shop">Add to cart</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div id="latest-products" class="section-heading latest-heading">
+        <div>
+          <p class="eyebrow">Just landed</p>
+          <h2 class="h22">New favorites</h2>
+        </div>
+        <span class="collection-count">01 — 08</span>
+      </div>
+      <div class="next-4-images">
+        <div class="product" data-category="footwear" data-tag="Just in">
+          <img
+            src="images/images/product-5.jpg"
+            alt="White athletic sneakers"
+          />
+          <p>White Sneakers</p>
+
+          <div class="rating">
+            <ion-icon name="star-outline" class="star"></ion-icon>
+            <ion-icon name="star-outline" class="star"></ion-icon>
+            <ion-icon name="star-outline" class="star"></ion-icon>
+            <ion-icon name="star-outline" class="star"></ion-icon>
+          </div>
+
+          <div class="price">
+            <p>$150.00</p>
+            <a href="#" class="shop">Add to cart</a>
+          </div>
+        </div>
+
+        <div class="product" data-category="apparel">
+          <img
+            src="images/images/product-6.jpg"
+            alt="Black printed workout T-shirt"
+          />
+          <p>Black Printed T-shirt</p>
+
+          <div class="rating">
+            <ion-icon name="star-outline" class="star"></ion-icon>
+            <ion-icon name="star-outline" class="star"></ion-icon>
+            <ion-icon name="star-outline" class="star"></ion-icon>
+          </div>
+
+          <div class="price">
+            <p>$80.00</p>
+            <a href="#" class="shop">Add to cart</a>
+          </div>
+        </div>
+
+        <div class="product" data-category="accessories">
+          <img
+            src="images/images/product-7.jpg"
+            alt="Performance sports socks"
+          />
+          <p>Socks</p>
+
+          <div class="rating">
+            <ion-icon name="star-outline" class="star"></ion-icon>
+            <ion-icon name="star-outline" class="star"></ion-icon>
+            <ion-icon name="star-outline" class="star"></ion-icon>
+            <ion-icon name="star-outline" class="star"></ion-icon>
+          </div>
+
+          <div class="price">
+            <p>$10.00</p>
+            <a href="#" class="shop">Add to cart</a>
+          </div>
+        </div>
+
+        <div class="product" data-category="accessories" data-tag="Just in">
+          <img src="images/images/product-8.jpg" alt="Minimal face watch" />
+          <p>Minimal Analog Watch</p>
+
+          <div class="rating">
+            <ion-icon name="star-outline" class="star"></ion-icon>
+            <ion-icon name="star-outline" class="star"></ion-icon>
+            <ion-icon name="star-outline" class="star"></ion-icon>
+            <ion-icon name="star-outline" class="star"></ion-icon>
+            <ion-icon name="star-outline" class="star"></ion-icon>
+          </div>
+
+          <div class="price">
+            <p>$90.00</p>
+            <a href="#" class="shop">Add to cart</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="last-4-images">
+        <div class="product" data-category="accessories">
+          <img
+            src="images/images/product-9.jpg"
+            alt="Sport watch with a dark dial"
+          />
+          <p>Classic Sport Watch</p>
+
+          <div class="rating">
+            <ion-icon name="star-outline" class="star"></ion-icon>
+            <ion-icon name="star-outline" class="star"></ion-icon>
+            <ion-icon name="star-outline" class="star"></ion-icon>
+            <ion-icon name="star-outline" class="star"></ion-icon>
+          </div>
+
+          <div class="price">
+            <p>$80.00</p>
+            <a href="#" class="shop">Add to cart</a>
+          </div>
+        </div>
+
+        <div class="product" data-category="footwear">
+          <img
+            src="images/images/product-10.jpg"
+            alt="Black athletic sneakers"
+          />
+          <p>Black Sneakers</p>
+
+          <div class="rating">
+            <ion-icon name="star-outline" class="star"></ion-icon>
+            <ion-icon name="star-outline" class="star"></ion-icon>
+            <ion-icon name="star-outline" class="star"></ion-icon>
+          </div>
+
+          <div class="price">
+            <p>$300.00</p>
+            <a href="#" class="shop">Add to cart</a>
+          </div>
+        </div>
+
+        <div class="product" data-category="footwear">
+          <img src="images/images/product-11.jpg" alt="Everyday sneakers" />
+          <p>Everyday Trainers</p>
+
+          <div class="rating">
+            <ion-icon name="star-outline" class="star"></ion-icon>
+            <ion-icon name="star-outline" class="star"></ion-icon>
+          </div>
+
+          <div class="price">
+            <p>$100.00</p>
+            <a href="#" class="shop">Add to cart</a>
+          </div>
+        </div>
+
+        <div class="product" data-category="apparel">
+          <img
+            src="images/images/product-12.jpg"
+            alt="Black performance tracksuit"
+          />
+          <p>Black Training Set</p>
+
+          <div class="rating">
+            <ion-icon name="star-outline" class="star"></ion-icon>
+            <ion-icon name="star-outline" class="star"></ion-icon>
+            <ion-icon name="star-outline" class="star"></ion-icon>
+            <ion-icon name="star-outline" class="star"></ion-icon>
+          </div>
+
+          <div class="price">
+            <p>$450.00</p>
+            <a href="#" class="shop">Add to cart</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="about" class="main-container">
+      <!-- ushbu asosiy ya'ni orqa fonni beramiz-->
+      <div class="second-container">
+        <!--bu esa ush rang berilgan conteyner ichiga width ni kiritamiz-->
+        <div class="clock-container">
+          <div class="img-box">
+            <img
+              src="images/images/exclusive.png"
+              alt="RedStore Smart Band 4"
+            />
+          </div>
+
+          <div class="img-box">
+            <p class="eyebrow">A little extra motivation</p>
+            <h1>Smart Band 4</h1>
+            <p>
+              The Mi Smart Band 4 features a 39.9% larger (than Mi Band 3)
+              AMOLED color full-touch display with adjustable brightness, so
+              everything is clear as can be
+            </p>
+            <a href="#" class="shop buy-button">Buy Now &#8594;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <div class="commentators">
+        <div class="comment first-person">
+          <ion-icon
+            name="chatbox-ellipses-outline"
+            class="review"
+            aria-hidden="true"
+          ></ion-icon>
+
+          <p>
+            "The fabric is so comfortable I end up wearing it long after my
+            workout. Already planning my next order."
+          </p>
+          <img src="images/images/user-1.png" alt="" />
+          <h4>Sean Parker</h4>
+        </div>
+
+        <div class="comment second-person">
+          <ion-icon
+            name="chatbox-ellipses-outline"
+            class="review"
+            aria-hidden="true"
+          ></ion-icon>
+
+          <p>
+            "Finally, gear that feels as good on a rest day as it does at the
+            gym. The fit is just right."
+          </p>
+          <img src="images/images/user-2.png" alt="" />
+          <h4>Mike Smith</h4>
+        </div>
+
+        <div class="comment third-person">
+          <ion-icon
+            name="chatbox-ellipses-outline"
+            class="review"
+            aria-hidden="true"
+          ></ion-icon>
+
+          <p>
+            "Love the little details and the quality. Everything feels
+            considered, from the fit to the finish."
+          </p>
+          <img src="images/images/user-3.png" alt="" />
+          <h4>Mabel Joe</h4>
+        </div>
+      </div>
+
+      <div class="logos">
+        <div class="col-5">
+          <img src="images/images/logo-godrej.png" alt="Godrej" />
+        </div>
+        <div class="col-5">
+          <img src="images/images/logo-oppo.png" alt="Oppo" />
+        </div>
+        <div class="col-5">
+          <img src="images/images/logo-coca-cola.png" alt="Coca-Cola" />
+        </div>
+        <div class="col-5">
+          <img src="images/images/logo-paypal.png" alt="PayPal" />
+        </div>
+        <div class="col-5">
+          <img src="images/images/logo-philips.png" alt="Philips" />
+        </div>
+      </div>
+    </section>
+
+    <div id="footer" class="footer">
+      <div class="last-container">
+        <div class="row">
+          <div class="columns first-column">
+            <h3>Download our App</h3>
+            <p>Download App for Android and IOS mobile phone</p>
+            <div class="web">
+              <img
+                src="images/images/play-store.png"
+                alt="Get the Android app on Google Play"
+              />
+              <img
+                src="images/images/app-store.png"
+                alt="Download the app on the App Store"
+              />
+            </div>
+          </div>
+
+          <div class="columns second-column">
+            <a href="#" class="footer-brand" aria-label="RedStore home">
+              <span class="brand-mark" aria-hidden="true">r.</span>
+              <span class="brand-copy"
+                ><strong>redstore</strong
+                ><small>MOVE WITH INTENTION</small></span
+              >
+            </a>
+            <p>
+              Our Purpose Is To Sustainably Make th Pleasure <br />and Benefits
+              of Sports Accessible to the Many.
+            </p>
+          </div>
+
+          <div class="columns third-column">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog Post</li>
+              <li>Return Policy</li>
+              <li>Join Affliate</li>
+            </ul>
+          </div>
+
+          <div class="columns fourth-column">
+            <h3>Follow us</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>YouTube</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <hr />
+          <p class="copyright">Usmanov Shingiskhan Savlabek uly</p>
+        </div>
+      </div>
+    </div>
+    <div
+      id="cart-message"
+      class="cart-message"
+      role="status"
+      aria-live="polite"
+      hidden
+    ></div>
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle");
+      const siteNavigation = document.querySelector("#site-navigation");
+      const cartCount = document.querySelector("#cart-count");
+      const cartLink = document.querySelector(".cart-link");
+      const cartMessage = document.querySelector("#cart-message");
+      const products = [...document.querySelectorAll(".product")];
+      const collectionFilters = document.querySelector(".collection-filters");
+      let itemCount = 0;
+      let messageTimeout;
+
+      document.querySelectorAll(".rating ion-icon").forEach((star) => {
+        star.setAttribute("name", "star");
+      });
+
+      products.forEach((product) => {
+        const name = product.querySelector(":scope > p").textContent.trim();
+        const favoriteButton = document.createElement("button");
+        favoriteButton.className = "favorite-button";
+        favoriteButton.type = "button";
+        favoriteButton.textContent = "♡";
+        favoriteButton.setAttribute(
+          "aria-label",
+          `Save ${name} to your wishlist`,
+        );
+        favoriteButton.setAttribute("aria-pressed", "false");
+        product.append(favoriteButton);
+      });
+
+      menuToggle.addEventListener("click", () => {
+        const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
+        menuToggle.setAttribute("aria-expanded", String(!isOpen));
+        menuToggle.setAttribute(
+          "aria-label",
+          isOpen ? "Open menu" : "Close menu",
+        );
+        siteNavigation.classList.toggle("is-open", !isOpen);
+      });
+
+      siteNavigation.addEventListener("click", (event) => {
+        if (event.target.closest("a")) {
+          menuToggle.setAttribute("aria-expanded", "false");
+          menuToggle.setAttribute("aria-label", "Open menu");
+          siteNavigation.classList.remove("is-open");
+        }
+      });
+
+      collectionFilters.addEventListener("click", (event) => {
+        const filterButton = event.target.closest(".filter-chip");
+        if (!filterButton) return;
+
+        const filter = filterButton.dataset.filter;
+        collectionFilters.querySelectorAll(".filter-chip").forEach((button) => {
+          const isActive = button === filterButton;
+          button.classList.toggle("is-active", isActive);
+          button.setAttribute("aria-pressed", String(isActive));
+        });
+
+        products.forEach((product) => {
+          product.hidden =
+            filter !== "all" && product.dataset.category !== filter;
+        });
+
+        document
+          .querySelectorAll(".images-4, .next-4-images, .last-4-images")
+          .forEach((grid) => {
+            grid.hidden = !grid.querySelector(".product:not([hidden])");
+          });
+      });
+
+      document.querySelectorAll(".favorite-button").forEach((button) => {
+        button.addEventListener("click", () => {
+          const isSaved = button.getAttribute("aria-pressed") === "true";
+          const productName = button
+            .closest(".product")
+            .querySelector(":scope > p")
+            .textContent.trim();
+          button.setAttribute("aria-pressed", String(!isSaved));
+          button.setAttribute(
+            "aria-label",
+            `${isSaved ? "Save" : "Remove"} ${productName} ${isSaved ? "to" : "from"} your wishlist`,
+          );
+          button.textContent = isSaved ? "♡" : "♥";
+          cartMessage.textContent = isSaved
+            ? `${productName} removed from your wishlist`
+            : `${productName} saved to your wishlist`;
+          cartMessage.hidden = false;
+          window.clearTimeout(messageTimeout);
+          messageTimeout = window.setTimeout(() => {
+            cartMessage.hidden = true;
+          }, 2400);
+        });
+      });
+
+      document.querySelectorAll(".shop").forEach((button) => {
+        button.addEventListener("click", (event) => {
+          event.preventDefault();
+          itemCount += 1;
+          cartCount.textContent = String(itemCount);
+          cartLink.setAttribute(
+            "aria-label",
+            `Shopping bag, ${itemCount} ${itemCount === 1 ? "item" : "items"}`,
+          );
+          cartMessage.textContent = `${button.closest(".product").querySelector(":scope > p").textContent} added to your bag`;
+          cartMessage.hidden = false;
+          window.clearTimeout(messageTimeout);
+          messageTimeout = window.setTimeout(() => {
+            cartMessage.hidden = true;
+          }, 2400);
+        });
+      });
+    </script>
+  </body>
+</html>
