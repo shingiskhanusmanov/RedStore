@@ -1,0 +1,513 @@
+.announcement-bar {
+  min-height: 34px;
+  display: grid;
+  place-items: center;
+  padding: 6px 20px;
+  color: #fff;
+  background: var(--ink);
+  text-align: center;
+}
+
+.announcement-bar p {
+  margin: 0;
+  font-size: 11px;
+  letter-spacing: 0.09em;
+}
+
+.announcement-bar span {
+  color: #f4a28e;
+}
+
+header {
+  overflow: hidden;
+  background:
+    radial-gradient(
+      ellipse at 77% 48%,
+      rgba(237, 211, 187, 0.44),
+      transparent 30%
+    ),
+    var(--paper);
+}
+
+.nav-bar {
+  min-height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(32, 35, 31, 0.08);
+}
+
+.brand {
+  flex: 0 0 180px;
+}
+
+.logo {
+  width: 142px;
+  height: auto;
+  object-fit: contain;
+}
+
+#site-navigation {
+  display: flex;
+  align-items: center;
+  gap: 38px;
+}
+
+#site-navigation a {
+  position: relative;
+  padding-block: 8px;
+  color: #55574f;
+  font-size: 13px;
+  transition: color 180ms ease;
+}
+
+#site-navigation a::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  background: var(--accent);
+  content: "";
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 180ms ease;
+}
+
+#site-navigation a:hover,
+#site-navigation a:focus-visible {
+  color: var(--accent);
+}
+
+#site-navigation a:hover::after,
+#site-navigation a:focus-visible::after {
+  transform: scaleX(1);
+}
+
+.nav-actions {
+  flex: 0 0 180px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 18px;
+}
+
+.cart-link {
+  position: relative;
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.66);
+}
+
+.cart {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+#cart-count {
+  position: absolute;
+  top: -4px;
+  right: -5px;
+  min-width: 17px;
+  height: 17px;
+  display: grid;
+  place-items: center;
+  padding-inline: 4px;
+  border-radius: 50%;
+  color: #fff;
+  background: var(--accent);
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.menu-toggle {
+  display: none;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+}
+
+.menu {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+.box {
+  min-height: 580px;
+  display: grid;
+  grid-template-columns: 0.92fr 1.08fr;
+  align-items: center;
+  gap: 36px;
+  padding-block: 34px 54px;
+}
+
+.text-box {
+  position: relative;
+  z-index: 1;
+  max-width: 510px;
+  padding-block: 30px;
+}
+
+.text-box h1 {
+  margin: 0 0 20px;
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(50px, 6vw, 78px);
+  font-weight: 600;
+  letter-spacing: -0.075em;
+  line-height: 0.99;
+}
+
+.text-box h1 span {
+  color: var(--accent);
+  font-weight: 800;
+}
+
+.text-box > p:not(.eyebrow) {
+  max-width: 405px;
+  margin: 0 0 27px;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.button {
+  min-height: 49px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 0 23px;
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+  color: #fff;
+  background: var(--accent);
+  font-size: 12px;
+  font-weight: 700;
+  transition:
+    color 180ms ease,
+    background 180ms ease,
+    transform 180ms ease;
+}
+
+.button:hover {
+  color: var(--accent);
+  background: transparent;
+  transform: translateY(-2px);
+}
+
+.button span {
+  font-size: 16px;
+}
+
+.hero-note {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 25px;
+  color: #66675f;
+  font-size: 11px;
+}
+
+.hero-note-stars {
+  color: #d88833;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+}
+
+.hero-image {
+  position: relative;
+  min-height: 460px;
+  display: grid;
+  place-items: center;
+}
+
+.hero-image-ring {
+  position: absolute;
+  width: min(92%, 470px);
+  aspect-ratio: 1;
+  border: 1px solid rgba(32, 35, 31, 0.12);
+  border-radius: 50%;
+}
+
+.hero-image-ring::before,
+.hero-image-ring::after {
+  position: absolute;
+  border: 1px solid rgba(32, 35, 31, 0.08);
+  border-radius: 50%;
+  content: "";
+  inset: 20px;
+}
+
+.hero-image-ring::after {
+  inset: 42px;
+}
+
+.hero-image > img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-height: 520px;
+  object-fit: contain;
+  filter: drop-shadow(0 24px 24px rgba(38, 35, 31, 0.12));
+}
+
+.hero-sticker {
+  position: absolute;
+  z-index: 2;
+  right: 2%;
+  bottom: 12%;
+  width: 105px;
+  height: 105px;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  border-radius: 50%;
+  color: #fff;
+  background: var(--accent);
+  box-shadow: 0 12px 30px rgba(233, 84, 53, 0.22);
+  transform: rotate(9deg);
+}
+
+.hero-sticker span {
+  font-size: 8px;
+  letter-spacing: 0.2em;
+}
+
+.hero-sticker strong {
+  margin-top: 5px;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .brand,
+  .nav-actions {
+    flex-basis: 130px;
+  }
+
+  #site-navigation {
+    gap: 23px;
+  }
+
+  .box {
+    min-height: 510px;
+    gap: 10px;
+  }
+
+  .hero-image {
+    min-height: 380px;
+  }
+}
+
+@media (max-width: 640px) {
+  .announcement-bar p {
+    font-size: 9px;
+    letter-spacing: 0.04em;
+  }
+
+  .nav-bar {
+    min-height: 72px;
+  }
+
+  .brand,
+  .nav-actions {
+    flex-basis: auto;
+  }
+
+  .logo {
+    width: 123px;
+  }
+
+  .nav-actions {
+    gap: 10px;
+  }
+
+  .menu-toggle {
+    display: grid;
+    place-items: center;
+  }
+
+  #site-navigation {
+    position: absolute;
+    z-index: 5;
+    top: 105px;
+    right: 18px;
+    left: 18px;
+    display: none;
+    align-items: stretch;
+    gap: 0;
+    padding: 10px 18px;
+    border: 1px solid var(--line);
+    background: #fff;
+    box-shadow: 0 16px 30px rgba(32, 35, 31, 0.1);
+  }
+
+  #site-navigation.is-open {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #site-navigation a {
+    padding: 13px 0;
+    border-bottom: 1px solid var(--line);
+    color: var(--ink);
+    font-size: 13px;
+  }
+
+  #site-navigation a:last-child {
+    border-bottom: 0;
+  }
+
+  .box {
+    min-height: 0;
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding-block: 40px 22px;
+  }
+
+  .text-box {
+    padding-block: 6px;
+  }
+
+  .text-box h1 {
+    font-size: clamp(48px, 13vw, 68px);
+  }
+
+  .text-box > p:not(.eyebrow) {
+    max-width: 360px;
+    font-size: 13px;
+  }
+
+  .hero-note {
+    margin-top: 18px;
+  }
+
+  .hero-image {
+    min-height: 280px;
+    margin-top: 2px;
+  }
+
+  .hero-image > img {
+    width: min(100%, 390px);
+    max-height: 350px;
+  }
+
+  .hero-image-ring {
+    width: min(85%, 310px);
+  }
+
+  .hero-sticker {
+    right: 4%;
+    bottom: 9%;
+    width: 79px;
+    height: 79px;
+  }
+
+  .hero-sticker span {
+    font-size: 6px;
+  }
+
+  .hero-sticker strong {
+    font-size: 12px;
+  }
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  flex: 0 0 180px;
+}
+
+.brand-mark {
+  width: 35px;
+  height: 35px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: #fff;
+  background: var(--accent);
+  font-family: "Playfair Display", serif;
+  font-size: 23px;
+  font-style: italic;
+  line-height: 1;
+}
+
+.brand-copy {
+  display: grid;
+  gap: 2px;
+}
+
+.brand-copy strong {
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: -0.07em;
+  line-height: 1;
+}
+
+.brand-copy small {
+  color: var(--muted);
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+}
+
+.text-box h1 span {
+  font-family: "Playfair Display", serif;
+  font-size: 1.08em;
+  font-style: italic;
+  font-weight: 500;
+  letter-spacing: -0.08em;
+}
+
+.text-box .eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.text-box .eyebrow::before {
+  width: 24px;
+  height: 1px;
+  background: var(--accent);
+  content: "";
+}
+
+@media (max-width: 900px) {
+  .brand {
+    flex-basis: 130px;
+  }
+}
+
+@media (max-width: 640px) {
+  .brand {
+    flex-basis: auto;
+  }
+
+  .brand-mark {
+    width: 31px;
+    height: 31px;
+  }
+
+  .brand-copy strong {
+    font-size: 14px;
+  }
+
+  .brand-copy small {
+    font-size: 6px;
+  }
+}
